@@ -1,0 +1,50 @@
+{
+	"name": "webapp-boilerplate",
+	"version": "1.0.0",
+	"main": "src/client/index.js",
+	"repository": "https://github.com/Martini024/webapp-boilerplate.git",
+	"author": "martini <zhao435021640@gmail.com>",
+	"license": "MIT",
+	"private": true,
+	"keywords": [
+		"app",
+		"boilerplate",
+		"express",
+		"nodejs",
+		"react",
+		"webapp"
+	],
+	"scripts": {
+		"start": "node src/server/index.js",
+		"build": "webpack --mode production",
+		"client": "webpack-dev-server --mode development --hot",
+		"server": "nodemon src/server/index.js",
+		"dev": "concurrently \"yarn server\" \"yarn client\""
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.8.4",
+		"@babel/core": "^7.9.0",
+		"@babel/preset-env": "^7.9.0",
+		"@babel/preset-react": "^7.9.4",
+		"babel-loader": "^8.1.0",
+		"clean-webpack-plugin": "^3.0.0",
+		"concurrently": "^5.1.0",
+		"css-loader": "^3.4.2",
+		"html-loader": "^1.0.0",
+		"html-webpack-plugin": "^4.0.2",
+		"nodemon": "^2.0.2",
+		"style-loader": "^1.1.3",
+		"webpack": "^4.42.1",
+		"webpack-cli": "^3.3.11",
+		"webpack-dev-server": "^3.10.3"
+	},
+	"dependencies": {
+		"antd": "^4.0.4",
+		"axios": "^0.19.2",
+		"express": "^4.17.1",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-router-dom": "^5.1.2",
+		"styled-components": "^5.0.1"
+	}
+}
